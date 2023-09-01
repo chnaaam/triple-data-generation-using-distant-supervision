@@ -1,0 +1,15 @@
+[tool.poetry]
+name = "triple-data-generation-using-distant-supervision"
+version = "0.1.0"
+description = ""
+authors = ["Your Name <you@example.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.8"
+nlp = {path = "../nlp/dist/nlp-0.1.0-py3-none-any.whl"}
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
