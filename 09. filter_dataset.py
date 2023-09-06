@@ -3,7 +3,7 @@ import os
 from collections import defaultdict
 
 import pandas as pd
-from nlp.engines import NlpEngine
+from luie import LuieEngine
 from tqdm import tqdm
 
 from config import load_config
@@ -23,7 +23,7 @@ def main():
     source_path = config.filter_dataset.path.source_path
     dest_path = config.filter_dataset.path.dest_path
 
-    engine = NlpEngine(task="ner")
+    engine = LuieEngine(task="ner")
 
     for file_name in os.listdir(os.path.join(source_path)):
         file_full_path = os.path.join(source_path, file_name)
